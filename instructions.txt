@@ -1,0 +1,27 @@
+Created by J.H.
+
+The following uses an implementation of the SDES and SAES algorithm to perform some 
+basic functions such as encryption, decryption and keyGeneration.
+
+The programs accepts the following commands:
+
+To generate key1 and key 2:
+    py.exe kg 10-bit key
+
+To encrypt:
+    py.exe e (8-bit plaintext) key1 key2
+
+To decrypt:
+    py.exe d (8-bit cyphertext) key1 key2
+
+
+To use the SAES function use the following commans as follow:
+    -Keys, plaintext, and cyphertext must be 16-bit 
+Decryption:
+    py.exe saes d key0 key1 key2 cyphertext
+
+Encryption:
+    py.exe saes e key0 key1 key2 plaintext
+
+Key Generation:
+    py.exe saes kg key
